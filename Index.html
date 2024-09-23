@@ -3,78 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compre o eBook - Instituto Superar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gerenciamento de Tempo - Ebook Exclusivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            color: #333;
         }
 
         header {
-            background-color: #2a9d8f;
+            background-color: #3d237a; /* Cor roxa */
             color: white;
             padding: 20px;
+            width: 100vw; /* Ocupa 100% da largura da viewport */
+            box-sizing: border-box; /* Inclui padding dentro da largura */
             text-align: center;
         }
 
-        h1 {
-            margin: 0;
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .header-container img {
+            height: 150px; /* Mantém as imagens na mesma altura */
+            width: auto; /* Mantém a proporção da imagem */
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        header h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-align: center;
+            width: 100%;
         }
 
         main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             padding: 20px;
         }
 
-        .ebook-cover {
-            max-width: 300px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
+        section#intro {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px 0;
         }
 
-        .buy-button {
-            background-color: #e76f51;
+        section#intro img {
+            max-width: 100%; /* Ajusta a largura da imagem para não exceder a largura do container */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        section#chapters {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        section#chapters h2 {
+            font-size: 1.8rem;
+            color: #3d237a;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        a.button {
+            background-color: #3d237a;
             color: white;
-            padding: 15px 30px;
             border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
+            padding: 10px 20px;
+            font-size: 1.2rem;
             cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
             text-decoration: none;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: uppercase;
         }
 
-        .buy-button:hover {
-            background-color: #d9573a;
+        a.button:hover {
+            background-color: #2c1a5c;
         }
 
         footer {
-            margin-top: 20px;
             text-align: center;
-            color: #777;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Compre o eBook do Instituto Superar</h1>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo" id="logo">
+            <img src="baner.png" alt="Baner" id="baner">
+        </div>
+        <h1>Adquira o eBook "Gerenciamento de Tempo"</h1>
+        <a href="https://pay.kiwify.com.br/x3EuuDQ" class="button">Comprar Agora</a>
     </header>
+
     <main>
-        <img src="caminho-para-imagem-do-ebook.jpg" alt="Capa do eBook" class="ebook-cover">
-        <p>Aprenda a superar desafios e alcançar seus objetivos com o nosso eBook exclusivo!</p>
-        <a href="https://pay.kiwify.com.br/x3EuuDQ" class="buy-button">Comprar Agora</a>
+        <section id="intro">
+            <h2>Gerenciamento de Tempo - Ebook Exclusivo</h2>
+            <img src="capa.png" alt="Capa do Ebook">
+            <p>Transforme sua produtividade com o nosso guia completo de gerenciamento de tempo. Aprenda como organizar melhor seu dia e alcançar seus objetivos de forma mais eficiente.</p>
+        </section>
+
+        <section id="chapters">
+            <h2>O que você vai encontrar no ebook:</h2>
+            <ul>
+                <li>📘 Capítulo 1: Definição de metas</li>
+                <li>📘 Capítulo 2: Dicas de gerenciamento de tempo para trabalhadores domiciliares</li>
+                <li>📘 Capítulo 3: O Método Posec de Gerenciamento de Tempo</li>
+                <li>📘 Capítulo 4: A importância de delegar tarefas</li>
+                <li>📘 Capítulo 5: Ferramentas Simples para Gerenciamento de Tempo</li>
+                <li>📘 Capítulo 6: Aumente sua produtividade com hábitos diários</li>
+                <li>📘 Capítulo 7: Maneiras de aumentar drasticamente a produtividade</li>
+                <li>📘 Capítulo 8: Faça menos e realize mais</li>
+                <li>📘 Capítulo 9: Táticas de gerenciamento de tempo para empreendedores ocupados</li>
+                <li>📘 Capítulo 10: Erros de Marketing na Internet e Gerenciamento de Tempo</li>
+            </ul>
+        </section>
+
+        <section id="cta">
+            <a href="https://pay.kiwify.com.br/x3EuuDQ" class="button">Comprar Agora</a>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Instituto Superar. Todos os direitos reservados.</p>
+        &copy; 2024 Gerenciamento de Tempo. Todos os direitos reservados.
     </footer>
+
 </body>
 </html>
