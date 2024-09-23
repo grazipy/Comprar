@@ -29,20 +29,23 @@
             text-align: center;
         }
 
+        /* Estilo para as imagens de logo e banner */
         .header-container {
             display: flex;
+            flex-direction: column; /* Organiza as imagens em coluna */
             justify-content: center;
             align-items: center;
             width: 100%;
         }
 
         .header-container img {
-            height: 150px; /* Mantém as imagens na mesma altura */
-            width: auto; /* Mantém a proporção da imagem */
-            max-width: 100%;
-            object-fit: contain;
+            width: 100%; /* A imagem ocupa a largura total do container */
+            max-width: 300px; /* Limita o tamanho máximo da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            margin: 10px 0; /* Espaçamento entre logo e banner */
         }
 
+        /* Estilo do título principal */
         header h1 {
             margin: 20px 0;
             font-size: 2.5rem;
@@ -54,6 +57,7 @@
             padding: 20px;
         }
 
+        /* Estilo da imagem de capa no conteúdo */
         section#intro {
             text-align: center;
             padding: 20px 0;
@@ -62,6 +66,9 @@
         section#intro img {
             max-width: 100%; /* Ajusta a largura da imagem para não exceder a largura do container */
             height: auto; /* Mantém a proporção da imagem */
+            width: 100%;
+            max-width: 400px; /* Limita a largura máxima da capa */
+            margin: 20px 0;
         }
 
         section#chapters {
@@ -122,7 +129,7 @@
     <header>
         <div class="header-container">
             <img src="logo.png" alt="Logo" id="logo">
-            <img src="baner.png" alt="Baner" id="baner">
+            <img src="baner.png" alt="Banner" id="baner">
         </div>
         <h1>Adquira o eBook "Gerenciamento de Tempo"</h1>
         <a href="https://pay.kiwify.com.br/x3EuuDQ" class="button">Comprar Agora</a>
